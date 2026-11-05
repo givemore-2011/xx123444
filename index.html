@@ -77,7 +77,7 @@
   <header>
     <div>
       <h1>DIY 装机价格面板</h1>
-      <div class="sub">CPU · 显卡 · 主板 · 内存 · 固态硬盘 · 电源 · 显示器　|　一线品牌 · 中端以上价位段</div>
+      <div class="sub">CPU · 显卡 · 主板 · 内存 · 固态硬盘 · 机械硬盘 · 电源 · 显示器　|　一线品牌 · 中端以上价位段</div>
     </div>
     <div class="stamp" id="stamp"></div>
   </header>
@@ -101,6 +101,12 @@
     </div>
   </div>
 
+  <div class="card" style="margin-bottom:12px">
+    <h2>价格档位分布</h2>
+    <div class="hint" id="bucketHint">每档在售型号数，点柱子只留该价位段的型号</div>
+    <div class="chart" id="bucketChart" style="height:196px"></div>
+  </div>
+
   <div class="grid">
     <div class="card" style="grid-column:1/2">
       <h2>价格变动</h2>
@@ -109,7 +115,7 @@
     </div>
     <div class="card">
       <h2>型号明细</h2>
-      <div class="hint">点击表头排序，型号名可跳转详情页</div>
+      <div class="hint" id="tblHint">点击表头排序，型号名可跳转详情页</div>
       <div class="tblwrap"><table id="tbl"></table></div>
     </div>
   </div>
@@ -134,7 +140,8 @@ const $ = id => document.getElementById(id);
 const CATS = ["CPU","显卡","主板","内存","固态硬盘","机械硬盘","电源","显示器"].filter(c=>B.categories[c]);
 let cur = CATS[0] || null;
 let sortKey = "price", sortAsc = true;
-let trendChart, brandChart;
+let trendChart, brandChart, bucketChart;
+let priceFilter = null;   // {lo,hi,label} 点档位柱后只看这一段
 
 const fmt = n => n==null ? "—" : "¥" + Number(n).toLocaleString("zh-CN");
 const pct = v => v==null ? '<span class="flat">—</span>'
@@ -145,13 +152,14 @@ function init(){
   $("tabs").innerHTML = CATS.map(c=>`<div class="tab${c===cur?" on":""}" data-c="${c}">${c}</div>`).join("");
   $("tabs").onclick = e=>{
     const t = e.target.closest(".tab"); if(!t) return;
-    cur = t.dataset.c; sortKey="price"; sortAsc=true;
+    cur = t.dataset.c; sortKey="price"; sortAsc=true; priceFilter=null;
     [...$("tabs").children].forEach(x=>x.classList.toggle("on", x===t));
     render();
   };
   trendChart = echarts.init($("trend"));
   brandChart = echarts.init($("brandChart"));
-  window.addEventListener("resize", ()=>{trendChart.resize();brandChart.resize();});
+  bucketChart = echarts.init($("bucketChart"));
+  window.addEventListener("resize", ()=>{trendChart.resize();brandChart.resize();bucketChart.resize();});
   if(!cur){ document.querySelector(".wrap").innerHTML = '<div class="empty">暂无数据，请先运行 app.py</div>'; return; }
   drawWaterline();
   render();
@@ -170,8 +178,41 @@ function render(){
 
   drawTrend(d);
   drawBrands(d);
+  drawBuckets(d);
   drawMovers(d);
   drawTable(d);
+}
+
+function drawBuckets(d){
+  const bs = d.buckets || [];
+  if(!bs.length){ bucketChart.clear(); return; }
+  bucketChart.setOption({
+    grid:{left:36,right:16,top:22,bottom:26},
+    tooltip:{trigger:"axis",axisPointer:{type:"shadow"},
+      formatter:p=>{const i=p[0];const b=bs[i.dataIndex];
+        return `${b.label} 元<br><b>${b.count}</b> 款在售<br><span style="color:#9CA3AF">点击只看这一段</span>`}},
+    xAxis:{type:"category",data:bs.map(b=>b.label),
+           axisLine:{lineStyle:{color:"#E6E8EC"}},axisTick:{show:false},
+           axisLabel:{color:"#6B7280",fontSize:11}},
+    yAxis:{type:"value",name:"款数",nameTextStyle:{color:"#9CA3AF",fontSize:10},
+           axisLabel:{color:"#9CA3AF",fontSize:11},
+           splitLine:{lineStyle:{color:"#F1F2F4"}}},
+    series:[{
+      type:"bar",barWidth:"52%",
+      data:bs.map(b=>({
+        value:b.count,
+        itemStyle:{color: (priceFilter && priceFilter.lo===b.lo) ? "#1D5FD0" : "#9DB7E8",
+                   borderRadius:[4,4,0,0]}
+      })),
+      label:{show:true,position:"top",formatter:v=>v.value||"",color:"#6B7280",fontSize:10}
+    }]
+  }, true);
+  bucketChart.off("click");
+  bucketChart.on("click", p=>{
+    const b = bs[p.dataIndex]; if(!b) return;
+    priceFilter = (priceFilter && priceFilter.lo===b.lo) ? null : b;
+    drawBuckets(d); drawTable(d);
+  });
 }
 
 function drawTrend(d){
@@ -233,23 +274,32 @@ function drawMovers(d){
 }
 
 function drawTable(d){
-  const rows = [...d.models].sort((a,b)=>{
+  const base = priceFilter
+    ? d.models.filter(x=>x.price>=priceFilter.lo && x.price<priceFilter.hi)
+    : d.models;
+  const rows = [...base].sort((a,b)=>{
     const k = sortKey;
     if(k==="model"||k==="brand") return sortAsc ? String(a[k]).localeCompare(b[k],"zh") : String(b[k]).localeCompare(a[k],"zh");
     const av = a[k]==null?-1e9:a[k], bv = b[k]==null?-1e9:b[k];
     return sortAsc ? av-bv : bv-av;
   });
+  $("tblHint").innerHTML = priceFilter
+    ? `已筛 ${priceFilter.label} 元 · ${rows.length}/${d.count} 款 <a href="javascript:void(0)" id="clrFilter" style="color:#1D5FD0">清除筛选</a>`
+    : "点击表头排序，型号名可跳转详情页";
+  const clr = $("clrFilter");
+  if(clr) clr.onclick = ()=>{ priceFilter=null; drawBuckets(d); drawTable(d); };
   const head = [["model","型号"],["brand","品牌"],["price","现价"],["prev","上期"],["chg","涨跌"]];
   $("tbl").innerHTML = `
     <thead><tr>${head.map(([k,t])=>`<th data-k="${k}" class="${k==="brand"||k==="model"?"":"num"}">${t}${sortKey===k?(sortAsc?" ↑":" ↓"):""}</th>`).join("")}</tr></thead>
-    <tbody>${rows.map(x=>`
+    <tbody>${rows.length ? rows.map(x=>`
       <tr>
         <td><div class="model"><a href="${x.url}" target="_blank" rel="noopener">${x.model}</a></div></td>
         <td><span class="pill">${x.brand}</span></td>
         <td class="num">${fmt(x.price)}</td>
         <td class="num" style="color:#9CA3AF">${x.prev?fmt(x.prev):"—"}</td>
         <td class="num">${pct(x.chg)}</td>
-      </tr>`).join("")}</tbody>`;
+      </tr>`).join("")
+      : `<tr><td colspan="5"><div class="empty">该价位段暂无在售型号</div></td></tr>`}</tbody>`;
   $("tbl").querySelectorAll("th").forEach(th=>{
     th.onclick = ()=>{
       const k = th.dataset.k;

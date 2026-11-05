@@ -11,6 +11,42 @@ OUT = os.path.join(BASE, "data", "board.json")
 CAT_ORDER = ["CPU", "显卡", "主板", "内存", "固态硬盘", "机械硬盘", "电源", "显示器"]
 
 
+def nice_step(span, n=6):
+    """把价格跨度切成 5-7 个整数档位，步长取整百/整千，方便肉眼分档"""
+    raw = span / n
+    for s in (50, 100, 200, 250, 500, 1000, 1500, 2000, 2500):
+        if s >= raw:
+            return s
+    return 3000
+
+
+def fmt_k(v):
+    if v >= 1000:
+        return f"{v / 1000:.1f}".rstrip("0").rstrip(".") + "k"
+    return str(int(v))
+
+
+def make_buckets(prices):
+    """价格档位分布：每个档位有多少款在售，直接回答『这笔预算落在哪一档』"""
+    if not prices:
+        return []
+    lo, hi = min(prices), max(prices)
+    step = nice_step(hi - lo)
+    start = int(lo // step) * step
+    buckets = []
+    b = start
+    while b <= hi:
+        buckets.append({"lo": b, "hi": b + step,
+                        "label": f"{fmt_k(b)}-{fmt_k(b + step)}", "count": 0})
+        b += step
+    for p in prices:
+        for bk in buckets:
+            if bk["lo"] <= p < bk["hi"] or (p == hi and bk is buckets[-1]):
+                bk["count"] += 1
+                break
+    return buckets
+
+
 def build():
     con = sqlite3.connect(DB)
     con.row_factory = sqlite3.Row
@@ -69,6 +105,7 @@ def build():
             "median": round(statistics.median(prices)),
             "models": models,
             "series": series,
+            "buckets": make_buckets(prices),
             "drops": sorted(movers, key=lambda x: x["chg"])[:5],
             "rises": sorted(movers, key=lambda x: -x["chg"])[:5],
             "changed": len(movers),
