@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DIY 装机价格面板</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+<style>
+  :root{
+    --bg:#F5F6F8; --card:#FFFFFF; --line:#E6E8EC;
+    --t1:#1A1D23; --t2:#6B7280; --t3:#9CA3AF;
+    --brand:#1D5FD0; --brand-soft:#EAF0FC;
+    --up:#D92D20; --down:#079455;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--t1);font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;font-size:13px;line-height:1.6}
+  .wrap{max-width:1320px;margin:0 auto;padding:20px 24px 48px}
+  header{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:16px}
+  h1{font-size:19px;font-weight:600;letter-spacing:-.01em}
+  .sub{color:var(--t2);font-size:12px;margin-top:2px}
+  .stamp{color:var(--t3);font-size:12px;text-align:right;white-space:nowrap}
+  .tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+  .waterline{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;background:var(--card);
+      border:1px solid var(--line);border-radius:12px;padding:11px 16px;margin-bottom:12px;
+      font-size:12px;color:var(--t2)}
+  .waterline b{font-size:17px;font-weight:600;color:var(--t1);font-variant-numeric:tabular-nums}
+  .waterline .sep{color:#DDE1E7}
+  .waterline .note{color:var(--t3);font-size:11px}
+  .tab{padding:6px 14px;border-radius:8px;border:1px solid var(--line);background:var(--card);
+       color:var(--t2);cursor:pointer;font-size:13px;transition:.15s;user-select:none}
+  .tab:hover{border-color:#C9D2E0;color:var(--t1)}
+  .tab.on{background:var(--brand);border-color:var(--brand);color:#fff;font-weight:500}
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .kpi .k{color:var(--t2);font-size:12px}
+  .kpi .v{font-size:22px;font-weight:600;letter-spacing:-.02em;margin-top:2px}
+  .kpi .v small{font-size:12px;font-weight:400;color:var(--t3);margin-left:3px}
+  .grid{display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-bottom:12px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .card h2{font-size:13px;font-weight:600;margin-bottom:2px}
+  .card .hint{font-size:11px;color:var(--t3);margin-bottom:8px}
+  .chart{width:100%;height:250px}
+  .chart.sm{height:250px}
+  .movers{display:flex;flex-direction:column;gap:6px;max-height:250px;overflow:auto}
+  .mv{display:flex;justify-content:space-between;align-items:center;padding:7px 10px;
+      background:#FAFBFC;border:1px solid var(--line);border-radius:8px;gap:10px}
+  .mv .n{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px}
+  .mv .p{color:var(--t2);font-variant-numeric:tabular-nums;font-size:12px}
+  .mv .c{font-variant-numeric:tabular-nums;font-size:12px;font-weight:500;min-width:52px;text-align:right}
+  .up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--t3)}
+  .empty{color:var(--t3);font-size:12px;padding:16px 0;text-align:center}
+  table{width:100%;border-collapse:collapse;font-size:12px}
+  th{text-align:left;color:var(--t2);font-weight:500;padding:8px 10px;border-bottom:1px solid var(--line);
+     position:sticky;top:0;background:var(--card);cursor:pointer;white-space:nowrap}
+  th.num,td.num{text-align:right;font-variant-numeric:tabular-nums}
+  td{padding:8px 10px;border-bottom:1px solid #F1F2F4}
+  tr:hover td{background:#FAFBFC}
+  .tblwrap{max-height:420px;overflow:auto}
+  .model{display:flex;gap:6px;align-items:center}
+  .model a{color:var(--t1);text-decoration:none}
+  .model a:hover{color:var(--brand);text-decoration:underline}
+  .pill{display:inline-block;font-size:10px;color:var(--t2);background:#F1F3F6;
+        border-radius:4px;padding:1px 5px;white-space:nowrap}
+  footer{margin-top:20px;color:var(--t3);font-size:11px;line-height:1.8;border-top:1px solid var(--line);padding-top:12px}
+  .news{display:grid;grid-template-columns:1fr 1fr;gap:8px;max-height:340px;overflow:auto}
+  .nw{padding:10px 12px;background:#FAFBFC;border:1px solid var(--line);border-radius:8px;
+      text-decoration:none;display:block;transition:.15s}
+  .nw:hover{border-color:#C9D2E0;background:#F7F9FC}
+  .nw .t{font-size:12.5px;color:var(--t1);line-height:1.5;margin-bottom:4px}
+  .nw .m{font-size:11px;color:var(--t3)}
+  @media(max-width:900px){.news{grid-template-columns:1fr}}
+  @media(max-width:900px){.kpis{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>DIY 装机价格面板</h1>
+      <div class="sub">CPU · 显卡 · 主板 · 内存 · 固态硬盘 · 电源 · 显示器　|　一线品牌 · 中端以上价位段</div>
+    </div>
+    <div class="stamp" id="stamp"></div>
+  </header>
+
+  <div class="waterline" id="waterline"></div>
+
+  <div class="tabs" id="tabs"></div>
+
+  <div class="kpis" id="kpis"></div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>分类均价走势</h2>
+      <div class="hint" id="trendHint"></div>
+      <div class="chart" id="trend"></div>
+    </div>
+    <div class="card">
+      <h2>品牌均价对比</h2>
+      <div class="hint">同一品类下各品牌在售型号的平均参考价</div>
+      <div class="chart sm" id="brandChart"></div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card" style="grid-column:1/2">
+      <h2>价格变动</h2>
+      <div class="hint" id="mvHint">对比上一个采集日</div>
+      <div class="movers" id="movers"></div>
+    </div>
+    <div class="card">
+      <h2>型号明细</h2>
+      <div class="hint">点击表头排序，型号名可跳转详情页</div>
+      <div class="tblwrap"><table id="tbl"></table></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:12px">
+    <h2>行情资讯</h2>
+    <div class="hint" id="newsHint">按 CPU / 显卡 / 内存 / 存储 / 涨跌价等关键词从科技媒体筛出</div>
+    <div class="news" id="news"></div>
+  </div>
+
+  <footer>
+    数据来源：中关村在线公开报价库（参考价，非电商实时到手价）· 每日采集一次 · 仅作行情参考，不构成购买建议<br>
+    首批曲线需累积 2 天以上采集数据才会成形；品类入库数量取决于当日品牌与价位段筛选结果。
+  </footer>
+</div>
+
+<script src="data/board.js"></script>
+<script src="data/news.js"></script>
+<script>
+const B = window.BOARD;
+const $ = id => document.getElementById(id);
+const CATS = ["CPU","显卡","主板","内存","固态硬盘","机械硬盘","电源","显示器"].filter(c=>B.categories[c]);
+let cur = CATS[0] || null;
+let sortKey = "price", sortAsc = true;
+let trendChart, brandChart;
+
+const fmt = n => n==null ? "—" : "¥" + Number(n).toLocaleString("zh-CN");
+const pct = v => v==null ? '<span class="flat">—</span>'
+  : v>0 ? `<span class="up">+${v}%</span>` : v<0 ? `<span class="down">${v}%</span>` : '<span class="flat">0%</span>';
+
+function init(){
+  $("stamp").innerHTML = `数据日期 ${B.latest_date}<br>生成于 ${B.generated}`;
+  $("tabs").innerHTML = CATS.map(c=>`<div class="tab${c===cur?" on":""}" data-c="${c}">${c}</div>`).join("");
+  $("tabs").onclick = e=>{
+    const t = e.target.closest(".tab"); if(!t) return;
+    cur = t.dataset.c; sortKey="price"; sortAsc=true;
+    [...$("tabs").children].forEach(x=>x.classList.toggle("on", x===t));
+    render();
+  };
+  trendChart = echarts.init($("trend"));
+  brandChart = echarts.init($("brandChart"));
+  window.addEventListener("resize", ()=>{trendChart.resize();brandChart.resize();});
+  if(!cur){ document.querySelector(".wrap").innerHTML = '<div class="empty">暂无数据，请先运行 app.py</div>'; return; }
+  drawWaterline();
+  render();
+  drawNews();
+}
+
+function render(){
+  const d = B.categories[cur];
+  if(!d) return;
+
+  $("kpis").innerHTML = `
+    <div class="kpi"><div class="k">在售型号</div><div class="v">${d.count}<small>款</small></div></div>
+    <div class="kpi" title="均价 ${fmt(d.avg)}"><div class="k">中位价</div><div class="v">${fmt(d.median)}</div></div>
+    <div class="kpi"><div class="k">价格区间</div><div class="v" style="font-size:17px">${fmt(d.min)} – ${fmt(d.max)}</div></div>
+    <div class="kpi"><div class="k">本期有变动</div><div class="v">${d.changed}<small>款</small></div></div>`;
+
+  drawTrend(d);
+  drawBrands(d);
+  drawMovers(d);
+  drawTable(d);
+}
+
+function drawTrend(d){
+  const s = d.series;
+  const multi = s.length > 1;
+  $("trendHint").textContent = multi
+    ? `共 ${s.length} 天采集记录，折线为品类均价`
+    : "目前仅 1 天数据，明天再跑一次即可看到曲线";
+  trendChart.setOption({
+    grid:{left:52,right:16,top:16,bottom:28},
+    tooltip:{trigger:"axis",valueFormatter:v=>fmt(v)},
+    xAxis:{type:"category",data:s.map(x=>x.date.slice(5)),axisLine:{lineStyle:{color:"#E6E8EC"}},
+           axisLabel:{color:"#9CA3AF",fontSize:11},axisTick:{show:false}},
+    yAxis:{type:"value",scale:true,axisLabel:{color:"#9CA3AF",fontSize:11,formatter:v=>"¥"+v},
+           splitLine:{lineStyle:{color:"#F1F2F4"}}},
+    series:[{
+      type:"line", data:s.map(x=>x.avg), smooth:true, symbolSize:7,
+      lineStyle:{color:"#1D5FD0",width:2}, itemStyle:{color:"#1D5FD0"},
+      areaStyle:{color:"rgba(29,95,208,0.07)"},
+      label:{show:!multi||s.length<8,position:"top",formatter:v=>"¥"+v.avg,color:"#1D5FD0",fontSize:11},
+      markPoint: s.length>1 ? {data:[
+        {type:"min",name:"最低",itemStyle:{color:"#079455"},label:{formatter:"¥{c}"}},
+        {type:"max",name:"最高",itemStyle:{color:"#D92D20"},label:{formatter:"¥{c}"}}
+      ]} : undefined
+    }]
+  }, true);
+}
+
+function drawBrands(d){
+  const m = {};
+  d.models.forEach(x=>{ (m[x.brand] ||= []).push(x.price); });
+  const arr = Object.entries(m).map(([k,v])=>[k, Math.round(v.reduce((a,b)=>a+b,0)/v.length), v.length])
+                            .sort((a,b)=>a[1]-b[1]).slice(-10);
+  brandChart.setOption({
+    grid:{left:8,right:56,top:8,bottom:8,containLabel:true},
+    tooltip:{trigger:"axis",axisPointer:{type:"shadow"},
+             formatter:p=>{const i=p[0];return `${i.name}<br>均价 ${fmt(i.value)}<br>${arr[i.dataIndex][2]} 款在售`}},
+    xAxis:{type:"value",axisLabel:{show:false},splitLine:{show:false},axisLine:{show:false}},
+    yAxis:{type:"category",data:arr.map(x=>x[0]),axisLine:{show:false},axisTick:{show:false},
+           axisLabel:{color:"#6B7280",fontSize:11}},
+    series:[{type:"bar",data:arr.map(x=>x[1]),barWidth:"55%",
+             itemStyle:{color:"#9DB7E8",borderRadius:[0,4,4,0]},
+             label:{show:true,position:"right",formatter:v=>"¥"+v.value,color:"#6B7280",fontSize:10}}]
+  }, true);
+}
+
+function drawMovers(d){
+  const list = [...(d.drops||[]), ...(d.rises||[])].filter(x=>x.chg!==0);
+  if(!list.length){
+    $("movers").innerHTML = '<div class="empty">暂无跨日变动数据<br>需要至少 2 天采集</div>';
+    return;
+  }
+  $("movers").innerHTML = list.slice(0,14).map(x=>`
+    <div class="mv">
+      <div class="n" title="${x.model}">${x.model}</div>
+      <div class="p">${fmt(x.price)}</div>
+      <div class="c">${pct(x.chg)}</div>
+    </div>`).join("");
+}
+
+function drawTable(d){
+  const rows = [...d.models].sort((a,b)=>{
+    const k = sortKey;
+    if(k==="model"||k==="brand") return sortAsc ? String(a[k]).localeCompare(b[k],"zh") : String(b[k]).localeCompare(a[k],"zh");
+    const av = a[k]==null?-1e9:a[k], bv = b[k]==null?-1e9:b[k];
+    return sortAsc ? av-bv : bv-av;
+  });
+  const head = [["model","型号"],["brand","品牌"],["price","现价"],["prev","上期"],["chg","涨跌"]];
+  $("tbl").innerHTML = `
+    <thead><tr>${head.map(([k,t])=>`<th data-k="${k}" class="${k==="brand"||k==="model"?"":"num"}">${t}${sortKey===k?(sortAsc?" ↑":" ↓"):""}</th>`).join("")}</tr></thead>
+    <tbody>${rows.map(x=>`
+      <tr>
+        <td><div class="model"><a href="${x.url}" target="_blank" rel="noopener">${x.model}</a></div></td>
+        <td><span class="pill">${x.brand}</span></td>
+        <td class="num">${fmt(x.price)}</td>
+        <td class="num" style="color:#9CA3AF">${x.prev?fmt(x.prev):"—"}</td>
+        <td class="num">${pct(x.chg)}</td>
+      </tr>`).join("")}</tbody>`;
+  $("tbl").querySelectorAll("th").forEach(th=>{
+    th.onclick = ()=>{
+      const k = th.dataset.k;
+      if(sortKey===k) sortAsc = !sortAsc; else { sortKey = k; sortAsc = (k==="model"||k==="brand"); }
+      drawTable(d);
+    };
+  });
+}
+
+function drawWaterline(){
+  const o = B.overview;
+  if(!o){ $("waterline").style.display = "none"; return; }
+  $("waterline").innerHTML = `
+    <span>主机六件参考水位 <b>${fmt(o.core)}</b></span>
+    <span class="sep">|</span>
+    <span>含显示器 <b>${fmt(o.with_monitor)}</b></span>
+    <span class="sep">|</span>
+    <span class="note">各类中位价相加，用来看市场量级，不是能直接下单的配置单</span>`;
+}
+
+function drawNews(){
+  const N = window.NEWS;
+  if(!N || !N.items || !N.items.length){
+    $("news").innerHTML = '<div class="empty">暂无资讯，运行 news.py 拉取</div>';
+    return;
+  }
+  $("newsHint").textContent = `更新于 ${N.updated} · 共 ${N.items.length} 条相关`;
+  $("news").innerHTML = N.items.slice(0,14).map(x=>`
+    <a class="nw" href="${x.url}" target="_blank" rel="noopener">
+      <div class="t">${x.title}</div>
+      <div class="m">${x.source}${x.time ? " · " + x.time.slice(0,16) : ""}</div>
+    </a>`).join("");
+}
+
+init();
+</script>
+</body>
+</html>
