@@ -14,11 +14,27 @@ FEEDS = [
     {"name": "IT之家", "url": "https://www.ithome.com/rss/"},
 ]
 
-# 命中任意一个即视为相关
-KEYS = ["显卡", "CPU", "处理器", "内存", "DDR5", "DDR4", "固态", "SSD", "硬盘",
-        "主板", "电源", "显示器", "机箱", "散热", "存储", "显存", "GPU", "锐龙",
-        "酷睿", "英伟达", "AMD", "英特尔", "三星电子", "海力士", "长江存储",
-        "涨价", "降价", "缺货", "产能", "停产", "出货", "装机", "DIY"]
+# 硬件词：只有标题里出现这些，才算这条资讯跟 DIY 硬件有关
+# （原来用「标题+描述」全文匹配，结果 "固态电池" 命中 "固态"、"续航" 这类词，
+#   汽车和机器人新闻混进来占了大半屏，面板一眼看过去全是无关内容）
+HARD = ["显卡", "cpu", "处理器", "内存条", "内存", "ddr5", "ddr4", "ddr",
+        "固态硬盘", "固态", "ssd", "nvme", "机械硬盘", "硬盘", "主板", "电源",
+        "显示器", "机箱", "散热", "显存", "gpu", "锐龙", "酷睿", "英伟达",
+        "nvidia", "intel", "amd", "装机", "pcie", "内存颗粒", "海力士",
+        "长江存储", "三星电子", "美光", "水冷", "风冷", "矿卡", "超频"]
+
+# 标题里出现这些词直接丢：说明这条属于手机/汽车/机器人赛道，不是 DIY 硬件
+BLOCK = ["汽车", "车型", "纯电", "续航", "机器人", "手机", "骁龙", "天玑",
+         "折叠屏", "平板", "新能源车", "整车", "试驾", "上市发布会", "股价",
+         "移动电源", "充电宝", "充电器", "数据线"]
+
+
+def hit(title, desc=""):
+    t = title.lower()
+    if any(b in t for b in BLOCK):
+        return False
+    return any(k in t for k in HARD)
+
 
 
 def fetch(url):
@@ -59,7 +75,7 @@ def main():
             pub = (item.findtext("pubDate") or "").strip()
             if not title or not link:
                 continue
-            if not any(k.lower() in (title + desc).lower() for k in KEYS):
+            if not hit(title, desc):
                 continue
             out.append({"source": f["name"], "title": title, "url": link,
                         "summary": clean(desc), "time": pub})
