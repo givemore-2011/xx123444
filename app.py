@@ -93,12 +93,14 @@ def cmd_push():
     from datetime import datetime
     cmd_publish()
 
-    # 本机全局 git 配了 GitHub 加速规则（ghfast.top），它不支持 push，
-    # 所以推送时用一个空的全局配置，让它直连 github.com
+    # 本机全局 git 配了 GitHub 加速规则（ghfast.top），不支持 push。
+    # 关键是两步都做：①用空全局配置绕开 insteadOf 重写 ②push 时给显式 github.com 地址，
+    # 因为仓库里存的 origin 已经被写成 ghfast 前缀了，只清配置还是会推错地方。
     empty_cfg = os.path.join(BASE, ".gitconfig-empty")
     if not os.path.exists(empty_cfg):
         open(empty_cfg, "w").close()
-    env = {**os.environ, "GIT_CONFIG_GLOBAL": empty_cfg}
+    env = {**os.environ, "GIT_CONFIG_GLOBAL": empty_cfg, "GIT_TERMINAL_PROMPT": "0"}
+    PUSH_URL = "https://github.com/givemore-2011/xx123444.git"
 
     def run(*args, use_env=False):
         r = subprocess.run(args, cwd=BASE, capture_output=True, text=True,
@@ -112,7 +114,7 @@ def cmd_push():
     run("git", "add", "-A")
     if run("git", "commit", "-m", f"更新行情数据 {datetime.now():%Y-%m-%d %H:%M}") != 0:
         print("  数据没有变化，跳过提交")
-    if run("git", "push", use_env=True) != 0:
+    if run("git", "push", PUSH_URL, "main", use_env=True) != 0:
         print("推送失败：检查网络或 GitHub 凭据")
         return
     print("已推送，Pages 约 1 分钟后生效")
