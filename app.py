@@ -69,8 +69,6 @@ def cmd_publish():
     """生成可上传的纯静态目录 docs/，不含任何密钥（GitHub Pages 用 main 分支 /docs）"""
     import shutil
     pub = os.path.join(BASE, "docs")
-    if os.path.isdir(pub):
-        shutil.rmtree(pub)
     os.makedirs(os.path.join(pub, "data"), exist_ok=True)
     shutil.copy2(os.path.join(BASE, "index.html"), os.path.join(pub, "index.html"))
     for f in ("board.js", "news.js"):
@@ -136,11 +134,18 @@ def cmd_all(open_after=False):
         webbrowser.open(f"file:///{os.path.join(BASE, 'index.html').replace(os.sep, '/')}")
 
 
+def cmd_daily():
+    """定时任务用：采集 + 生成 + 推送上线"""
+    cmd_all(False)
+    log("4/4 推送到 GitHub")
+    cmd_push()
+
+
 def main():
     ap = argparse.ArgumentParser(add_help=True, description="DIY 装机价格监控")
     ap.add_argument("cmd", nargs="?", default="run",
                     choices=["run", "collect", "news", "build", "serve", "all",
-                             "publish", "push"])
+                             "publish", "push", "daily"])
     ap.add_argument("--port", type=int, default=8765)
     ap.add_argument("--lan", action="store_true", help="允许局域网访问（手机看）")
     a = ap.parse_args()
@@ -157,6 +162,8 @@ def main():
         cmd_publish()
     elif a.cmd == "push":
         cmd_push()
+    elif a.cmd == "daily":
+        cmd_daily()
     elif a.cmd == "all":
         cmd_all(False)
     else:

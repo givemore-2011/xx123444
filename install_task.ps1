@@ -8,8 +8,7 @@ $py  = (Get-Command python).Source
 $task = "DIYPriceMonitor"
 
 $action = New-ScheduledTaskAction `
-    -Execute $py `
-    -Argument "-u `"$dir\app.py`" collect" `
+    -Execute "$dir\daily.bat" `
     -WorkingDirectory $dir
 
 # 每天 09:30 跑一次；错过的任务在开机后补跑
