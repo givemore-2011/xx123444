@@ -10,3 +10,4 @@ __pycache__/
 *.pyc
 _c/
 publish/
+.gitconfig-empty

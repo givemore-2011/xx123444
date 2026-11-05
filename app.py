@@ -92,21 +92,32 @@ def cmd_publish():
 def cmd_push():
     """重新生成 docs 并推送到 GitHub Pages"""
     import subprocess
-    cmd_publish()
-    def run(*args):
-        r = subprocess.run(args, cwd=BASE, capture_output=True, text=True, encoding="utf-8")
-        out = (r.stdout or "") + (r.stderr or "")
-        print(out.strip()[:400])
-        return r.returncode
     from datetime import datetime
+    cmd_publish()
+
+    # 本机全局 git 配了 GitHub 加速规则（ghfast.top），它不支持 push，
+    # 所以推送时用一个空的全局配置，让它直连 github.com
+    empty_cfg = os.path.join(BASE, ".gitconfig-empty")
+    if not os.path.exists(empty_cfg):
+        open(empty_cfg, "w").close()
+    env = {**os.environ, "GIT_CONFIG_GLOBAL": empty_cfg}
+
+    def run(*args, use_env=False):
+        r = subprocess.run(args, cwd=BASE, capture_output=True, text=True,
+                           encoding="utf-8", errors="ignore",
+                           env=env if use_env else None)
+        out = ((r.stdout or "") + (r.stderr or "")).strip()
+        if out:
+            print("  " + out.splitlines()[-1][:200])
+        return r.returncode
+
     run("git", "add", "-A")
-    msg = f"更新行情数据 {datetime.now():%Y-%m-%d %H:%M}"
-    if run("git", "commit", "-m", msg) != 0:
-        print("没有变化，跳过提交")
-    if run("git", "push") != 0:
-        print("推送失败：检查是否已配置远程仓库和登录凭据")
+    if run("git", "commit", "-m", f"更新行情数据 {datetime.now():%Y-%m-%d %H:%M}") != 0:
+        print("  数据没有变化，跳过提交")
+    if run("git", "push", use_env=True) != 0:
+        print("推送失败：检查网络或 GitHub 凭据")
         return
-    print("已推送到 GitHub，Pages 几分钟内生效")
+    print("已推送，Pages 约 1 分钟后生效")
 
 
 def cmd_all(open_after=False):
