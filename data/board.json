@@ -1,9 +1,10 @@
 {
- "generated": "2026-11-08 21:33",
- "latest_date": "2026-11-08",
+ "generated": "2026-11-13 16:03",
+ "latest_date": "2026-11-13",
  "dates": [
   "2026-11-05",
-  "2026-11-08"
+  "2026-11-08",
+  "2026-11-13"
  ],
  "categories": {
   "CPU": {
@@ -420,6 +421,13 @@
      "min": 939.0,
      "max": 3199.0,
      "count": 49
+    },
+    {
+     "date": "2026-11-13",
+     "avg": 1992.0,
+     "min": 939.0,
+     "max": 3199.0,
+     "count": 49
     }
    ],
    "buckets": [
@@ -550,8 +558,8 @@
    "count": 59,
    "min": 2049.0,
    "max": 6499.0,
-   "avg": 4069,
-   "median": 3899,
+   "avg": 4065,
+   "median": 3859,
    "models": [
     {
      "model": "蓝宝石AMD Radeon RX 7650 GRE 8G 白金版双滚珠轴承风扇",
@@ -565,16 +573,16 @@
      "model": "万丽雪狐GeForce RTX 5050 OC 8GB GDDR6",
      "brand": "万丽",
      "price": 2199.0,
-     "prev": null,
-     "chg": null,
+     "prev": 2199.0,
+     "chg": 0.0,
      "url": "https://detail.zol.com.cn/vga/index2140364.shtml"
     },
     {
      "model": "技嘉RTX 4060 风魔 OC",
      "brand": "技嘉",
      "price": 2399.0,
-     "prev": null,
-     "chg": null,
+     "prev": 2399.0,
+     "chg": 0.0,
      "url": "https://detail.zol.com.cn/vga/index1794063.shtml"
     },
     {
@@ -624,6 +632,14 @@
      "prev": 2599.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/vga/index2162743.shtml"
+    },
+    {
+     "model": "万丽雪狐GeForce RTX 5060 OC 8GB",
+     "brand": "万丽",
+     "price": 2599.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/vga/index2140357.shtml"
     },
     {
      "model": "七彩虹战斧 GeForce RTX 5060 DUO 8GB",
@@ -858,28 +874,12 @@
      "url": "https://detail.zol.com.cn/vga/index2126086.shtml"
     },
     {
-     "model": "瀚铠Radeon RX 9070 XT 星空高品质PCB板材",
-     "brand": "瀚铠",
-     "price": 4749.0,
-     "prev": 4749.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/vga/index2155035.shtml"
-    },
-    {
      "model": "华硕DUAL-RTX4070-12G",
      "brand": "华硕",
      "price": 4799.0,
      "prev": 4799.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/vga/index1511486.shtml"
-    },
-    {
-     "model": "万丽星云GeForce RTX 5070 OC 12GB GDDR7",
-     "brand": "万丽",
-     "price": 4799.0,
-     "prev": 4799.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/vga/index2140373.shtml"
     },
     {
      "model": "万丽雪狐GeForce RTX 5070 OC 12GB GDDR7",
@@ -909,8 +909,8 @@
      "model": "影驰GeForce RTX 5060 Ti 金属大师白金版 OCDLSS 4 加持",
      "brand": "影驰",
      "price": 4899.0,
-     "prev": null,
-     "chg": null,
+     "prev": 4899.0,
+     "chg": 0.0,
      "url": "https://detail.zol.com.cn/vga/index2128139.shtml"
     },
     {
@@ -954,20 +954,20 @@
      "url": "https://detail.zol.com.cn/vga/index2166619.shtml"
     },
     {
-     "model": "耕升RTX 5070 追风OC",
-     "brand": "耕升",
-     "price": 5599.0,
-     "prev": null,
-     "chg": null,
-     "url": "https://detail.zol.com.cn/vga/index2124336.shtml"
-    },
-    {
      "model": "蓝宝石METAL 合金脉动 RX 9070 XT 16G D6",
      "brand": "蓝宝石",
      "price": 5599.0,
+     "prev": 5599.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/vga/index2123462.shtml"
+    },
+    {
+     "model": "瀚铠Radeon RX 9070 XT 超合金 白色酷炫ARGB灯效",
+     "brand": "瀚铠",
+     "price": 5799.0,
      "prev": null,
      "chg": null,
-     "url": "https://detail.zol.com.cn/vga/index2123462.shtml"
+     "url": "https://detail.zol.com.cn/vga/index2123165.shtml"
     },
     {
      "model": "蓝宝石PURE 极地 RX 9070 XT 16G D6 OC",
@@ -1018,6 +1018,14 @@
      "url": "https://detail.zol.com.cn/vga/index2121252.shtml"
     },
     {
+     "model": "华硕TUF-RTX4070TI-12G-GAMING",
+     "brand": "华硕",
+     "price": 6499.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/vga/index1440594.shtml"
+    },
+    {
      "model": "七彩虹战斧 GeForce RTX 4070 Ti SUPER 豪华版 16GB",
      "brand": "七彩虹",
      "price": 6499.0,
@@ -1029,14 +1037,21 @@
    "series": [
     {
      "date": "2026-11-05",
+     "avg": 4063.0,
+     "min": 2049.0,
+     "max": 6499.0,
+     "count": 54
+    },
+    {
+     "date": "2026-11-08",
      "avg": 4069.0,
      "min": 2049.0,
      "max": 6499.0,
      "count": 59
     },
     {
-     "date": "2026-11-08",
-     "avg": 4069.0,
+     "date": "2026-11-13",
+     "avg": 4065.0,
      "min": 2049.0,
      "max": 6499.0,
      "count": 59
@@ -1047,7 +1062,7 @@
      "lo": 2000,
      "hi": 3000,
      "label": "2k-3k",
-     "count": 17
+     "count": 18
     },
     {
      "lo": 3000,
@@ -1059,7 +1074,7 @@
      "lo": 4000,
      "hi": 5000,
      "label": "4k-5k",
-     "count": 15
+     "count": 13
     },
     {
      "lo": 5000,
@@ -1071,7 +1086,7 @@
      "lo": 6000,
      "hi": 7000,
      "label": "6k-7k",
-     "count": 6
+     "count": 7
     }
    ],
    "drops": [
@@ -1084,6 +1099,22 @@
      "url": "https://detail.zol.com.cn/vga/index2121058.shtml"
     },
     {
+     "model": "万丽雪狐GeForce RTX 5050 OC 8GB GDDR6",
+     "brand": "万丽",
+     "price": 2199.0,
+     "prev": 2199.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/vga/index2140364.shtml"
+    },
+    {
+     "model": "技嘉RTX 4060 风魔 OC",
+     "brand": "技嘉",
+     "price": 2399.0,
+     "prev": 2399.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/vga/index1794063.shtml"
+    },
+    {
      "model": "七彩虹iGame GeForce RTX 4060 Ultra W DUO 8GB",
      "brand": "七彩虹",
      "price": 2499.0,
@@ -1098,22 +1129,6 @@
      "prev": 2499.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/vga/index2128729.shtml"
-    },
-    {
-     "model": "华硕DUAL-RTX4060-O8G",
-     "brand": "华硕",
-     "price": 2499.0,
-     "prev": 2499.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/vga/index1794097.shtml"
-    },
-    {
-     "model": "耕升RTX 5060 踏雪OC5+",
-     "brand": "耕升",
-     "price": 2549.0,
-     "prev": 2549.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/vga/index2148080.shtml"
     }
    ],
    "rises": [
@@ -1126,6 +1141,22 @@
      "url": "https://detail.zol.com.cn/vga/index2121058.shtml"
     },
     {
+     "model": "万丽雪狐GeForce RTX 5050 OC 8GB GDDR6",
+     "brand": "万丽",
+     "price": 2199.0,
+     "prev": 2199.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/vga/index2140364.shtml"
+    },
+    {
+     "model": "技嘉RTX 4060 风魔 OC",
+     "brand": "技嘉",
+     "price": 2399.0,
+     "prev": 2399.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/vga/index1794063.shtml"
+    },
+    {
      "model": "七彩虹iGame GeForce RTX 4060 Ultra W DUO 8GB",
      "brand": "七彩虹",
      "price": 2499.0,
@@ -1140,31 +1171,15 @@
      "prev": 2499.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/vga/index2128729.shtml"
-    },
-    {
-     "model": "华硕DUAL-RTX4060-O8G",
-     "brand": "华硕",
-     "price": 2499.0,
-     "prev": 2499.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/vga/index1794097.shtml"
-    },
-    {
-     "model": "耕升RTX 5060 踏雪OC5+",
-     "brand": "耕升",
-     "price": 2549.0,
-     "prev": 2549.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/vga/index2148080.shtml"
     }
    ],
-   "changed": 54
+   "changed": 56
   },
   "主板": {
-   "count": 85,
+   "count": 89,
    "min": 659.0,
    "max": 2799.0,
-   "avg": 1528,
+   "avg": 1509,
    "median": 1399,
    "models": [
     {
@@ -1208,20 +1223,20 @@
      "url": "https://detail.zol.com.cn/motherboard/index2106519.shtml"
     },
     {
-     "model": "铭瑄 MS-挑战者 B760M",
-     "brand": "铭瑄",
-     "price": 749.0,
-     "prev": 749.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/motherboard/index1441186.shtml"
-    },
-    {
      "model": "微星PRO B760M-B DDR4",
      "brand": "微星",
      "price": 779.0,
      "prev": 779.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/motherboard/index1984969.shtml"
+    },
+    {
+     "model": "技嘉B760M GAMING",
+     "brand": "技嘉",
+     "price": 789.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/motherboard/index1466032.shtml"
     },
     {
      "model": "七彩虹BATTLE-AX B850M-PLUS S WIFI7 V1410+2+",
@@ -1238,6 +1253,14 @@
      "prev": 799.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/motherboard/index2099260.shtml"
+    },
+    {
+     "model": "七彩虹B760 BATTLE-AX B760M-WHITE WIFI V20",
+     "brand": "七彩虹",
+     "price": 799.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/motherboard/index1968620.shtml"
     },
     {
      "model": "技嘉B660M D2H DDR4",
@@ -1286,6 +1309,14 @@
      "prev": 899.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/motherboard/index2071208.shtml"
+    },
+    {
+     "model": "铭瑄 MS-终结者 B760ITX D4 WIFI",
+     "brand": "铭瑄",
+     "price": 949.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/motherboard/index1795310.shtml"
     },
     {
      "model": "铭瑄 MS-终结者 B760M D4 WIFI",
@@ -1368,14 +1399,6 @@
      "url": "https://detail.zol.com.cn/motherboard/index2155379.shtml"
     },
     {
-     "model": "华硕B760M-AYW PRO WIFI",
-     "brand": "华硕",
-     "price": 1099.0,
-     "prev": 1099.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/motherboard/index2105323.shtml"
-    },
-    {
      "model": "七彩虹CVN B760I FROZEN WIFI V20",
      "brand": "七彩虹",
      "price": 1199.0,
@@ -1390,6 +1413,14 @@
      "prev": 1199.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/motherboard/index1838313.shtml"
+    },
+    {
+     "model": "华硕TUF GAMING B660M-PLUS WIFI D4",
+     "brand": "华硕",
+     "price": 1199.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/motherboard/index1396654.shtml"
     },
     {
      "model": "华硕TUF GAMING B760M-PLUS D4重炮手",
@@ -1416,20 +1447,20 @@
      "url": "https://detail.zol.com.cn/motherboard/index1440077.shtml"
     },
     {
+     "model": "华硕TUF GAMING B850M-PLUS高效",
+     "brand": "华硕",
+     "price": 1299.0,
+     "prev": 1299.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/motherboard/index2118287.shtml"
+    },
+    {
      "model": "华硕TX GAMING B760M WIFI D4",
      "brand": "华硕",
      "price": 1299.0,
      "prev": 1299.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/motherboard/index1462815.shtml"
-    },
-    {
-     "model": "微星MAG B660M MORTAR WIFI",
-     "brand": "微星",
-     "price": 1299.0,
-     "prev": 1299.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/motherboard/index1396623.shtml"
     },
     {
      "model": "技嘉B650M AORUS ELITE AX ICE冰雕AMD主板",
@@ -1440,12 +1471,20 @@
      "url": "https://detail.zol.com.cn/motherboard/index2099481.shtml"
     },
     {
-     "model": "华硕TUF GAMING B850M-PLUS高效",
-     "brand": "华硕",
+     "model": "微星MAG B660M MORTAR WIFI",
+     "brand": "微星",
      "price": 1299.0,
      "prev": 1299.0,
      "chg": 0.0,
-     "url": "https://detail.zol.com.cn/motherboard/index2118287.shtml"
+     "url": "https://detail.zol.com.cn/motherboard/index1396623.shtml"
+    },
+    {
+     "model": "七彩虹CVN B760M FROZEN WIFI D5 V20",
+     "brand": "七彩虹",
+     "price": 1299.0,
+     "prev": 1299.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/motherboard/index1458460.shtml"
     },
     {
      "model": "华硕TUF GAMING B650M-E WIFI",
@@ -1456,20 +1495,20 @@
      "url": "https://detail.zol.com.cn/motherboard/index1929866.shtml"
     },
     {
+     "model": "技嘉B650M K",
+     "brand": "技嘉",
+     "price": 1299.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/motherboard/index1838306.shtml"
+    },
+    {
      "model": "华硕PRIME B760-PLUSLGA 1700插槽",
      "brand": "华硕",
      "price": 1299.0,
      "prev": 1299.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/motherboard/index2104520.shtml"
-    },
-    {
-     "model": "七彩虹CVN B760M FROZEN WIFI D5 V20",
-     "brand": "七彩虹",
-     "price": 1299.0,
-     "prev": null,
-     "chg": null,
-     "url": "https://detail.zol.com.cn/motherboard/index1458460.shtml"
     },
     {
      "model": "微星MAG B850M MORTAR MAX WIFI14+2+1路",
@@ -1504,20 +1543,20 @@
      "url": "https://detail.zol.com.cn/motherboard/index1984967.shtml"
     },
     {
-     "model": "微星PRO B760M-A DDR4 II",
-     "brand": "微星",
-     "price": 1399.0,
-     "prev": 1399.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/motherboard/index1984971.shtml"
-    },
-    {
      "model": "华硕TUF GAMING B850M-PLUS WIFI高效",
      "brand": "华硕",
      "price": 1399.0,
      "prev": 1399.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/motherboard/index2118288.shtml"
+    },
+    {
+     "model": "微星PRO B760M-A DDR4 II",
+     "brand": "微星",
+     "price": 1399.0,
+     "prev": 1399.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/motherboard/index1984971.shtml"
     },
     {
      "model": "华硕TUF GAMING B760M-PLUS WIFI II重炮手千兆网卡",
@@ -1552,20 +1591,20 @@
      "url": "https://detail.zol.com.cn/motherboard/index2118276.shtml"
     },
     {
-     "model": "技嘉B850M AORUS ELITE WIFI7 ICE-P",
-     "brand": "技嘉",
-     "price": 1499.0,
-     "prev": 1499.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/motherboard/index2130999.shtml"
-    },
-    {
      "model": "微星PRO Z690-P DDR4",
      "brand": "微星",
      "price": 1499.0,
      "prev": 1499.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/motherboard/index1395311.shtml"
+    },
+    {
+     "model": "技嘉B850M AORUS ELITE WIFI7 ICE-P",
+     "brand": "技嘉",
+     "price": 1499.0,
+     "prev": 1499.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/motherboard/index2130999.shtml"
     },
     {
      "model": "技嘉B860M AORUS PRO WIFI712+1+",
@@ -1579,17 +1618,17 @@
      "model": "微星MPG B850M EDGE TI MAX WIFI14+2+1",
      "brand": "微星",
      "price": 1599.0,
-     "prev": null,
-     "chg": null,
+     "prev": 1599.0,
+     "chg": 0.0,
      "url": "https://detail.zol.com.cn/motherboard/index2155378.shtml"
     },
     {
-     "model": "微星MAG B650M MORTAR WIFI",
-     "brand": "微星",
-     "price": 1699.0,
-     "prev": 1699.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/motherboard/index1430732.shtml"
+     "model": "华硕PRIME Z890M-PLUS WIFI10+1+2+",
+     "brand": "华硕",
+     "price": 1649.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/motherboard/index2109722.shtml"
     },
     {
      "model": "微星PRO Z690-A DDR4",
@@ -1606,6 +1645,14 @@
      "prev": 1699.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/motherboard/index1440298.shtml"
+    },
+    {
+     "model": "微星MAG B650M MORTAR WIFI",
+     "brand": "微星",
+     "price": 1699.0,
+     "prev": 1699.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/motherboard/index1430732.shtml"
     },
     {
      "model": "华硕TUF GAMING B850-PLUS WIFI高效",
@@ -1640,14 +1687,6 @@
      "url": "https://detail.zol.com.cn/motherboard/index1465974.shtml"
     },
     {
-     "model": "技嘉B760 AORUS ELITE AX",
-     "brand": "技嘉",
-     "price": 1799.0,
-     "prev": 1799.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/motherboard/index1440106.shtml"
-    },
-    {
      "model": "技嘉B760 AORUS MASTER DDR4",
      "brand": "技嘉",
      "price": 1899.0,
@@ -1678,6 +1717,14 @@
      "prev": 1899.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/motherboard/index2082440.shtml"
+    },
+    {
+     "model": "华硕PRIME Z790-P WIFI D4",
+     "brand": "华硕",
+     "price": 1899.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/motherboard/index1466007.shtml"
     },
     {
      "model": "华硕ROG STRIX B850-A GAMING WIFI SAI",
@@ -1720,14 +1767,6 @@
      "url": "https://detail.zol.com.cn/motherboard/index1465973.shtml"
     },
     {
-     "model": "技嘉B850 AORUS ELITE-P ICE12+2+",
-     "brand": "技嘉",
-     "price": 1999.0,
-     "prev": 1999.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/motherboard/index2177218.shtml"
-    },
-    {
      "model": "华硕PRIME Z890-P14+1+2+",
      "brand": "华硕",
      "price": 2049.0,
@@ -1752,6 +1791,14 @@
      "url": "https://detail.zol.com.cn/motherboard/index1984940.shtml"
     },
     {
+     "model": "技嘉Z790 UD AX",
+     "brand": "技嘉",
+     "price": 2099.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/motherboard/index1466055.shtml"
+    },
+    {
      "model": "华硕PRIME Z890-P WIFI14+1+2+",
      "brand": "华硕",
      "price": 2149.0,
@@ -1760,12 +1807,12 @@
      "url": "https://detail.zol.com.cn/motherboard/index2109720.shtml"
     },
     {
-     "model": "华硕TUF GAMING Z890-PLUS WIFI16+1+2+",
+     "model": "华硕PRIME X870-P14(80A)+2(80A)+1(80A)",
      "brand": "华硕",
-     "price": 2299.0,
-     "prev": 2299.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/motherboard/index2109716.shtml"
+     "price": 2199.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/motherboard/index2109004.shtml"
     },
     {
      "model": "华硕TUF GAMING Z790-PLUS WIFI D4",
@@ -1774,6 +1821,14 @@
      "prev": 2299.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/motherboard/index1429483.shtml"
+    },
+    {
+     "model": "华硕TUF GAMING Z890-PLUS WIFI16+1+2+",
+     "brand": "华硕",
+     "price": 2299.0,
+     "prev": 2299.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/motherboard/index2109716.shtml"
     },
     {
      "model": "微星B850MPOWER",
@@ -1838,23 +1893,15 @@
      "prev": 2799.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/motherboard/index2118274.shtml"
-    },
-    {
-     "model": "微星MPG Z790 EDGE WIFI DDR44插槽",
-     "brand": "微星",
-     "price": 2799.0,
-     "prev": 2799.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/motherboard/index1429464.shtml"
     }
    ],
    "series": [
     {
      "date": "2026-11-05",
-     "avg": 1520.0,
+     "avg": 1530.0,
      "min": 659.0,
      "max": 2799.0,
-     "count": 86
+     "count": 83
     },
     {
      "date": "2026-11-08",
@@ -1862,6 +1909,13 @@
      "min": 659.0,
      "max": 2799.0,
      "count": 85
+    },
+    {
+     "date": "2026-11-13",
+     "avg": 1509.0,
+     "min": 659.0,
+     "max": 2799.0,
+     "count": 89
     }
    ],
    "buckets": [
@@ -1869,13 +1923,13 @@
      "lo": 500,
      "hi": 1000,
      "label": "500-1k",
-     "count": 20
+     "count": 22
     },
     {
      "lo": 1000,
      "hi": 1500,
      "label": "1k-1.5k",
-     "count": 30
+     "count": 31
     },
     {
      "lo": 1500,
@@ -1887,13 +1941,13 @@
      "lo": 2000,
      "hi": 2500,
      "label": "2k-2.5k",
-     "count": 8
+     "count": 10
     },
     {
      "lo": 2500,
      "hi": 3000,
      "label": "2.5k-3k",
-     "count": 7
+     "count": 6
     }
    ],
    "drops": [
@@ -1980,14 +2034,14 @@
      "url": "https://detail.zol.com.cn/motherboard/index2106519.shtml"
     }
    ],
-   "changed": 83
+   "changed": 80
   },
   "内存": {
-   "count": 76,
+   "count": 74,
    "min": 259.0,
    "max": 2299.0,
-   "avg": 832,
-   "median": 734,
+   "avg": 842,
+   "median": 749,
    "models": [
     {
      "model": "金士顿FURY Beast 8GB DDR5 6000（KF560C40BB-8）",
@@ -2030,14 +2084,6 @@
      "url": "https://detail.zol.com.cn/memory/index1857413.shtml"
     },
     {
-     "model": "金士顿FURY Beast野兽 RGB DDR5 5200 8GB 黑自动超频",
-     "brand": "金士顿",
-     "price": 299.0,
-     "prev": 299.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/memory/index2017626.shtml"
-    },
-    {
      "model": "英睿达16GB DDR5 5600 笔记本内存条颗粒",
      "brand": "英睿达",
      "price": 300.0,
@@ -2060,6 +2106,14 @@
      "prev": 359.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/memory/index1403967.shtml"
+    },
+    {
+     "model": "威刚16GB DDR5 5600笔记本内存5600MHz",
+     "brand": "威刚",
+     "price": 369.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/memory/index1991153.shtml"
     },
     {
      "model": "金士顿FURY Beast 16GB DDR5 5600 白色款",
@@ -2097,8 +2151,8 @@
      "model": "光威天策 16GB（2×8GB）DDR4 3200",
      "brand": "光威",
      "price": 419.0,
-     "prev": null,
-     "chg": null,
+     "prev": 419.0,
+     "chg": 0.0,
      "url": "https://detail.zol.com.cn/memory/index1382782.shtml"
     },
     {
@@ -2118,20 +2172,20 @@
      "url": "https://detail.zol.com.cn/memory/index1327689.shtml"
     },
     {
+     "model": "金士顿16GB DDR5 5600台式机内存条面",
+     "brand": "金士顿",
+     "price": 429.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/memory/index1972796.shtml"
+    },
+    {
      "model": "金士顿16GB DDR4 3200（KVR32S22D8/16）",
      "brand": "金士顿",
      "price": 455.0,
      "prev": 455.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/memory/index1318144.shtml"
-    },
-    {
-     "model": "金士顿FURY Beast野兽 RGB DDR5 4800 16GB 黑自动超频",
-     "brand": "金士顿",
-     "price": 469.0,
-     "prev": 469.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/memory/index2017618.shtml"
     },
     {
      "model": "金士顿骇客神条FURY 16GB DDR4 3200（HX432C18FB/16-SP）",
@@ -2166,14 +2220,6 @@
      "url": "https://detail.zol.com.cn/memory/index1461004.shtml"
     },
     {
-     "model": "金士顿FURY Beast野兽 RGB DDR5 5200 16GB 黑自动超频",
-     "brand": "金士顿",
-     "price": 479.0,
-     "prev": 479.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/memory/index2017627.shtml"
-    },
-    {
      "model": "海盗船复仇者LPX 16GB DDR4 3200",
      "brand": "海盗船",
      "price": 490.0,
@@ -2206,6 +2252,14 @@
      "url": "https://detail.zol.com.cn/memory/index1328675.shtml"
     },
     {
+     "model": "英睿达16GB DDR4 3200（CT16G4SFD832A）",
+     "brand": "英睿达",
+     "price": 569.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/memory/index1286173.shtml"
+    },
+    {
      "model": "芝奇幻光戟 16GB DDR4 3200（F4-3200C16S-16GTZR）",
      "brand": "芝奇",
      "price": 589.0,
@@ -2214,28 +2268,12 @@
      "url": "https://detail.zol.com.cn/memory/index1345405.shtml"
     },
     {
-     "model": "英睿达32GB（16GB×2） DDR5 5600 台式机内存条DDR5-5600",
-     "brand": "英睿达",
-     "price": 599.0,
-     "prev": 599.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/memory/index1857415.shtml"
-    },
-    {
      "model": "英睿达32GB DDR5 5600 笔记本内存条颗粒",
      "brand": "英睿达",
      "price": 599.0,
      "prev": 599.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/memory/index1857393.shtml"
-    },
-    {
-     "model": "金士顿FURY Impact 16GB DDR4 3200（HX432S20IB/16）",
-     "brand": "金士顿",
-     "price": 629.0,
-     "prev": null,
-     "chg": null,
-     "url": "https://detail.zol.com.cn/memory/index1381020.shtml"
     },
     {
      "model": "金士顿16GB DDR4 3200（KVR32N22D8/16）",
@@ -2254,14 +2292,6 @@
      "url": "https://detail.zol.com.cn/memory/index1983943.shtml"
     },
     {
-     "model": "金士顿骇客神条FURY 16GB（2×8GB）DDR4 3200（HX432C18FB2",
-     "brand": "金士顿",
-     "price": 679.0,
-     "prev": 679.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/memory/index1270273.shtml"
-    },
-    {
      "model": "光威龙武系列 DDR5 6400 32GB(16GB×2) 海力士M-dieCL32时序",
      "brand": "光威",
      "price": 679.0,
@@ -2270,20 +2300,20 @@
      "url": "https://detail.zol.com.cn/memory/index1984003.shtml"
     },
     {
+     "model": "金士顿骇客神条FURY 16GB（2×8GB）DDR4 3200（HX432C18FB2",
+     "brand": "金士顿",
+     "price": 679.0,
+     "prev": 679.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/memory/index1270273.shtml"
+    },
+    {
      "model": "光威龙武系列 DDR5 6000 32GB(16GB×2)CL30时序",
      "brand": "光威",
      "price": 689.0,
      "prev": 689.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/memory/index1983942.shtml"
-    },
-    {
-     "model": "海盗船复仇者 32GB（2×16GB）DDR5 4800",
-     "brand": "海盗船",
-     "price": 699.0,
-     "prev": 699.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/memory/index1395774.shtml"
     },
     {
      "model": "金士顿FURY Beast 32GB DDR5 5600 白色款",
@@ -2374,6 +2404,14 @@
      "url": "https://detail.zol.com.cn/memory/index2017628.shtml"
     },
     {
+     "model": "金百达星刃 DDR5 7200 32GB(16GBx2)海力士颗粒",
+     "brand": "金百达",
+     "price": 849.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/memory/index1985003.shtml"
+    },
+    {
      "model": "光威天策 32GB（2×16GB）DDR4 3200",
      "brand": "光威",
      "price": 859.0,
@@ -2390,28 +2428,20 @@
      "url": "https://detail.zol.com.cn/memory/index1395770.shtml"
     },
     {
-     "model": "金士顿FURY Beast超级野兽DDR5 6400英雄联盟双城之战限定联名款 32GB",
-     "brand": "金士顿",
-     "price": 899.0,
-     "prev": 899.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/memory/index2117764.shtml"
-    },
-    {
-     "model": "芝奇幻锋戟 32GB（2×16GB）DDR5 6000 C36流线美学",
-     "brand": "芝奇",
-     "price": 899.0,
-     "prev": null,
-     "chg": null,
-     "url": "https://detail.zol.com.cn/memory/index1395768.shtml"
-    },
-    {
      "model": "海盗船复仇者LPX 32GB DDR4 3200（CM4X32GC3200C16K2E-",
      "brand": "海盗船",
      "price": 910.0,
      "prev": 910.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/memory/index1380238.shtml"
+    },
+    {
+     "model": "芝奇皇家戟 16GB DDR4 3200（F4-3200C16D-16GTRS）RGB灯",
+     "brand": "芝奇",
+     "price": 910.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/memory/index1264920.shtml"
     },
     {
      "model": "海盗船复仇者 32GB（2×16GB）DDR5 6400",
@@ -2446,12 +2476,28 @@
      "url": "https://detail.zol.com.cn/memory/index1984422.shtml"
     },
     {
+     "model": "威刚XPG 龙耀 D500G 吹雪 DDR5 6000 32GB(16GBx2)ROG炫",
+     "brand": "威刚",
+     "price": 979.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/memory/index1984405.shtml"
+    },
+    {
      "model": "芝奇焰锋戟 DDR5 6000 32GB（2×16GB）C30EXPO超频",
      "brand": "芝奇",
      "price": 999.0,
      "prev": 999.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/memory/index1985125.shtml"
+    },
+    {
+     "model": "芝奇皇家戟 16GB DDR4 3600（F4-3600C18D-16GTRS）高性能超",
+     "brand": "芝奇",
+     "price": 1049.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/memory/index1264898.shtml"
     },
     {
      "model": "金百达银爵 32GB（2×16GB）DDR5 6000",
@@ -2486,14 +2532,6 @@
      "url": "https://detail.zol.com.cn/memory/index2017609.shtml"
     },
     {
-     "model": "威刚万紫千红 8GB DDR5 4800",
-     "brand": "威刚",
-     "price": 1199.0,
-     "prev": null,
-     "chg": null,
-     "url": "https://detail.zol.com.cn/memory/index1356205.shtml"
-    },
-    {
      "model": "金百达黑刃 DDR5 6000 64GB(32GBx2)海力士颗粒",
      "brand": "金百达",
      "price": 1299.0,
@@ -2505,8 +2543,8 @@
      "model": "金士顿FURY Beast 32GB（2×16GB）DDR4 3600（KF436C18",
      "brand": "金士顿",
      "price": 1349.0,
-     "prev": null,
-     "chg": null,
+     "prev": 1349.0,
+     "chg": 0.0,
      "url": "https://detail.zol.com.cn/memory/index1380996.shtml"
     },
     {
@@ -2542,20 +2580,12 @@
      "url": "https://detail.zol.com.cn/memory/index1393413.shtml"
     },
     {
-     "model": "英睿达32GB（16GB×2）Pro DDR5 6400 CL32CL32低时序",
-     "brand": "英睿达",
-     "price": 1699.0,
-     "prev": 1699.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/memory/index2146893.shtml"
-    },
-    {
-     "model": "玖合异刃 16GB DDR5 6000 C28 海力士",
-     "brand": "玖合",
-     "price": 1799.0,
-     "prev": 1799.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/memory/index2176194.shtml"
+     "model": "威刚XPG 威龙 D35 DDR4 3200 32GB(16GBx2) 黑色XMP2.0",
+     "brand": "威刚",
+     "price": 1689.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/memory/index2154852.shtml"
     },
     {
      "model": "金士顿FURY Beast 32GB（2×16GB）DDR5 6000（KF560C40",
@@ -2572,6 +2602,14 @@
      "prev": 1899.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/memory/index2017610.shtml"
+    },
+    {
+     "model": "芝奇焰锋戟 DDR5 6000 64GB（2×32GB）C30EXPO超频",
+     "brand": "芝奇",
+     "price": 1899.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/memory/index1985128.shtml"
     },
     {
      "model": "芝奇皇家戟 DDR5 6400 64GB（2×32GB）银色电镀镜面",
@@ -2601,10 +2639,10 @@
    "series": [
     {
      "date": "2026-11-05",
-     "avg": 829.0,
+     "avg": 828.0,
      "min": 259.0,
      "max": 2299.0,
-     "count": 76
+     "count": 71
     },
     {
      "date": "2026-11-08",
@@ -2612,6 +2650,13 @@
      "min": 259.0,
      "max": 2299.0,
      "count": 76
+    },
+    {
+     "date": "2026-11-13",
+     "avg": 842.0,
+     "min": 259.0,
+     "max": 2299.0,
+     "count": 74
     }
    ],
    "buckets": [
@@ -2619,13 +2664,13 @@
      "lo": 0,
      "hi": 500,
      "label": "0-500",
-     "count": 24
+     "count": 23
     },
     {
      "lo": 500,
      "hi": 1000,
      "label": "500-1k",
-     "count": 34
+     "count": 33
     },
     {
      "lo": 1000,
@@ -2730,23 +2775,15 @@
      "url": "https://detail.zol.com.cn/memory/index1857413.shtml"
     }
    ],
-   "changed": 71
+   "changed": 65
   },
   "固态硬盘": {
-   "count": 28,
-   "min": 249.0,
+   "count": 25,
+   "min": 259.0,
    "max": 1431.0,
-   "avg": 704,
-   "median": 639,
+   "avg": 738,
+   "median": 659,
    "models": [
-    {
-     "model": "西部数据GREEN SATA M.2 2280（240GB）SLC闪存架构",
-     "brand": "西部数据",
-     "price": 249.0,
-     "prev": null,
-     "chg": null,
-     "url": "https://detail.zol.com.cn/solid_state_drive/index1225824.shtml"
-    },
     {
      "model": "威刚XPG 翼龙S20PCIe3.0",
      "brand": "威刚",
@@ -2786,22 +2823,6 @@
      "prev": 319.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/series/626/10890663_1.html"
-    },
-    {
-     "model": "英睿达P310M.2 PCle4.0",
-     "brand": "英睿达",
-     "price": 329.0,
-     "prev": 329.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/series/626/10913356_1.html"
-    },
-    {
-     "model": "金士顿NV3 M.2 22302230小尺寸",
-     "brand": "金士顿",
-     "price": 359.0,
-     "prev": 359.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/series/626/10917588_1.html"
     },
     {
      "model": "三星CM871 M.2 SATA（128GB）",
@@ -2855,8 +2876,8 @@
      "model": "联想KTN8Pro M.2 NVMe PCIe 4.0PCIe4.0",
      "brand": "联想",
      "price": 649.0,
-     "prev": null,
-     "chg": null,
+     "prev": 649.0,
+     "chg": 0.0,
      "url": "https://detail.zol.com.cn/series/626/10920809_1.html"
     },
     {
@@ -2866,6 +2887,14 @@
      "prev": 659.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/series/626/10921058_1.html"
+    },
+    {
+     "model": "三星990 PRO NVMe M.2",
+     "brand": "三星",
+     "price": 669.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/series/626/10716527_1.html"
     },
     {
      "model": "雷克沙ARES PROM.2",
@@ -2898,14 +2927,6 @@
      "prev": 949.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/series/626/10831426_1.html"
-    },
-    {
-     "model": "铠侠EXCERIA BASIC SF10PCIe4",
-     "brand": "铠侠",
-     "price": 999.0,
-     "prev": null,
-     "chg": null,
-     "url": "https://detail.zol.com.cn/series/626/10923305_1.html"
     },
     {
      "model": "三星9100 PRONVMe协议",
@@ -2943,8 +2964,8 @@
      "model": "三星970 PRO NVMe M.2MLC闪存架构",
      "brand": "三星",
      "price": 1299.0,
-     "prev": null,
-     "chg": null,
+     "prev": 1299.0,
+     "chg": 0.0,
      "url": "https://detail.zol.com.cn/series/626/23570_1.html"
     },
     {
@@ -2967,10 +2988,10 @@
    "series": [
     {
      "date": "2026-11-05",
-     "avg": 688.0,
+     "avg": 689.0,
      "min": 259.0,
      "max": 1431.0,
-     "count": 25
+     "count": 24
     },
     {
      "date": "2026-11-08",
@@ -2978,6 +2999,13 @@
      "min": 249.0,
      "max": 1431.0,
      "count": 28
+    },
+    {
+     "date": "2026-11-13",
+     "avg": 738.0,
+     "min": 259.0,
+     "max": 1431.0,
+     "count": 25
     }
    ],
    "buckets": [
@@ -2985,7 +3013,7 @@
      "lo": 200,
      "hi": 400,
      "label": "200-400",
-     "count": 10
+     "count": 7
     },
     {
      "lo": 400,
@@ -2997,13 +3025,13 @@
      "lo": 600,
      "hi": 800,
      "label": "600-800",
-     "count": 4
+     "count": 5
     },
     {
      "lo": 800,
      "hi": 1000,
      "label": "800-1k",
-     "count": 4
+     "count": 3
     },
     {
      "lo": 1000,
@@ -3321,8 +3349,8 @@
      "model": "西部数据红盘Plus 8TB 7200转 256MB SATA3（WD80EFBX）",
      "brand": "西部数据",
      "price": 2229.0,
-     "prev": null,
-     "chg": null,
+     "prev": 2229.0,
+     "chg": 0.0,
      "url": "https://detail.zol.com.cn/hard_drives/index1374574.shtml"
     },
     {
@@ -3360,6 +3388,13 @@
     },
     {
      "date": "2026-11-08",
+     "avg": 1386.0,
+     "min": 470.0,
+     "max": 2499.0,
+     "count": 29
+    },
+    {
+     "date": "2026-11-13",
      "avg": 1386.0,
      "min": 470.0,
      "max": 2499.0,
@@ -3482,14 +3517,14 @@
      "url": "https://detail.zol.com.cn/hard_drives/index1137878.shtml"
     }
    ],
-   "changed": 28
+   "changed": 29
   },
   "电源": {
-   "count": 50,
+   "count": 46,
    "min": 319.0,
    "max": 1499.0,
-   "avg": 687,
-   "median": 609,
+   "avg": 662,
+   "median": 599,
    "models": [
     {
      "model": "航嘉狼牙650G V280PLUS金牌",
@@ -3516,12 +3551,12 @@
      "url": "https://detail.zol.com.cn/power/index2115394.shtml"
     },
     {
-     "model": "安钛克NE650 GOLD金牌全模",
-     "brand": "安钛克",
+     "model": "长城P6 白牌直出线高转换率",
+     "brand": "长城",
      "price": 339.0,
-     "prev": 339.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/power/index2181662.shtml"
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/power/index1913263.shtml"
     },
     {
      "model": "利民TR-KG750-WATX3.1金牌电源",
@@ -3572,6 +3607,14 @@
      "url": "https://detail.zol.com.cn/power/index1899926.shtml"
     },
     {
+     "model": "微星mag a650bn 650w铜牌",
+     "brand": "微星",
+     "price": 399.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/power/index1462718.shtml"
+    },
+    {
      "model": "长城V7-700W宽电压",
      "brand": "长城",
      "price": 419.0,
@@ -3620,28 +3663,20 @@
      "url": "https://detail.zol.com.cn/power/index391971.shtml"
     },
     {
+     "model": "鑫谷AN750W",
+     "brand": "鑫谷",
+     "price": 499.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/power/index1396363.shtml"
+    },
+    {
      "model": "海韵CORE GX650 ATX3.1 v2金牌全模650W",
      "brand": "海韵",
      "price": 524.0,
      "prev": 524.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/power/index2181697.shtml"
-    },
-    {
-     "model": "msi微星PRO MAX 850P白金牌全",
-     "brand": "微星",
-     "price": 529.0,
-     "prev": 529.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/power/index2170579.shtml"
-    },
-    {
-     "model": "振华ZILLION FG(II) PRO 750W日系电容",
-     "brand": "振华",
-     "price": 546.0,
-     "prev": 546.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/power/index2181660.shtml"
     },
     {
      "model": "鑫谷GM750W",
@@ -3668,14 +3703,6 @@
      "url": "https://detail.zol.com.cn/power/index2034253.shtml"
     },
     {
-     "model": "航嘉WD750K80PLUS金牌",
-     "brand": "航嘉",
-     "price": 599.0,
-     "prev": 599.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/power/index2124193.shtml"
-    },
-    {
      "model": "金河田白金牌A+850W白金",
      "brand": "金河田",
      "price": 599.0,
@@ -3684,11 +3711,19 @@
      "url": "https://detail.zol.com.cn/power/index1914234.shtml"
     },
     {
+     "model": "航嘉WD750K80PLUS金牌",
+     "brand": "航嘉",
+     "price": 599.0,
+     "prev": 599.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/power/index2124193.shtml"
+    },
+    {
      "model": "长城金牌巨龙GW-800SE（90+）",
      "brand": "长城",
      "price": 599.0,
-     "prev": null,
-     "chg": null,
+     "prev": 599.0,
+     "chg": 0.0,
      "url": "https://detail.zol.com.cn/power/index1213543.shtml"
     },
     {
@@ -3732,14 +3767,6 @@
      "url": "https://detail.zol.com.cn/power/index1342457.shtml"
     },
     {
-     "model": "振华LEADEX III ATX3.1 850WATX3.1",
-     "brand": "振华",
-     "price": 758.0,
-     "prev": 758.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/power/index2085593.shtml"
-    },
-    {
      "model": "长城GX850W",
      "brand": "长城",
      "price": 769.0,
@@ -3772,12 +3799,12 @@
      "url": "https://detail.zol.com.cn/power/index1342461.shtml"
     },
     {
-     "model": "振华LEADEX PE 1000W全",
-     "brand": "振华",
-     "price": 879.0,
-     "prev": 879.0,
+     "model": "航嘉重火力AX850P80PLUS白金牌全模",
+     "brand": "航嘉",
+     "price": 899.0,
+     "prev": 899.0,
      "chg": 0.0,
-     "url": "https://detail.zol.com.cn/power/index2181663.shtml"
+     "url": "https://detail.zol.com.cn/power/index2122910.shtml"
     },
     {
      "model": "长城GX 850W全",
@@ -3788,28 +3815,12 @@
      "url": "https://detail.zol.com.cn/power/index1913285.shtml"
     },
     {
-     "model": "航嘉重火力AX850P80PLUS白金牌全模",
-     "brand": "航嘉",
-     "price": 899.0,
-     "prev": 899.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/power/index2122910.shtml"
-    },
-    {
      "model": "长城金牌巨龙GW-EPS1000DA(90+)",
      "brand": "长城",
      "price": 899.0,
      "prev": 899.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/power/index299190.shtml"
-    },
-    {
-     "model": "海韵CORE GX850 ATX3.1 v2金牌全模850W",
-     "brand": "海韵",
-     "price": 899.0,
-     "prev": 899.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/power/index2181695.shtml"
     },
     {
      "model": "海韵Core GX750(ATX3)金牌",
@@ -3820,20 +3831,20 @@
      "url": "https://detail.zol.com.cn/power/index2113605.shtml"
     },
     {
+     "model": "海韵FOCUS GX750 White白色限定版",
+     "brand": "海韵",
+     "price": 899.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/power/index1348130.shtml"
+    },
+    {
      "model": "海韵CORE GX1000 ATX3.1 v2金牌全模1000W",
      "brand": "海韵",
      "price": 949.0,
      "prev": 949.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/power/index2181694.shtml"
-    },
-    {
-     "model": "长城巨龙1650W全",
-     "brand": "长城",
-     "price": 999.0,
-     "prev": 999.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/power/index1913259.shtml"
     },
     {
      "model": "长城金牌巨龙GW-EPS1250DA(90+)",
@@ -3844,20 +3855,12 @@
      "url": "https://detail.zol.com.cn/power/index299158.shtml"
     },
     {
-     "model": "海韵FOCUS v5 GX 750W白金",
-     "brand": "海韵",
+     "model": "长城巨龙1650W全",
+     "brand": "长城",
      "price": 999.0,
      "prev": 999.0,
      "chg": 0.0,
-     "url": "https://detail.zol.com.cn/power/index2164678.shtml"
-    },
-    {
-     "model": "鑫谷GM850W RGB80PLUS金牌",
-     "brand": "鑫谷",
-     "price": 1099.0,
-     "prev": 1099.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/power/index1382473.shtml"
+     "url": "https://detail.zol.com.cn/power/index1913259.shtml"
     },
     {
      "model": "海韵FOCUS v5 GX 850W白金",
@@ -3876,29 +3879,29 @@
      "url": "https://detail.zol.com.cn/power/index2105022.shtml"
     },
     {
-     "model": "华硕TUF GAMING 1200W 白金重炮手全",
-     "brand": "华硕",
-     "price": 1499.0,
-     "prev": 1499.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/power/index2175344.shtml"
-    },
-    {
      "model": "华硕ROG LOKI 洛基 1200W SFX-L 钛金牌电源ATX3.0",
      "brand": "华硕",
      "price": 1499.0,
      "prev": 1499.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/power/index2119748.shtml"
+    },
+    {
+     "model": "华硕TUF GAMING 1200W 白金重炮手全",
+     "brand": "华硕",
+     "price": 1499.0,
+     "prev": 1499.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/power/index2175344.shtml"
     }
    ],
    "series": [
     {
      "date": "2026-11-05",
-     "avg": 691.0,
+     "avg": 689.0,
      "min": 319.0,
      "max": 1499.0,
-     "count": 58
+     "count": 49
     },
     {
      "date": "2026-11-08",
@@ -3906,6 +3909,13 @@
      "min": 319.0,
      "max": 1499.0,
      "count": 50
+    },
+    {
+     "date": "2026-11-13",
+     "avg": 662.0,
+     "min": 319.0,
+     "max": 1499.0,
+     "count": 46
     }
    ],
    "buckets": [
@@ -3913,31 +3923,31 @@
      "lo": 200,
      "hi": 400,
      "label": "200-400",
-     "count": 10
+     "count": 11
     },
     {
      "lo": 400,
      "hi": 600,
      "label": "400-600",
-     "count": 15
+     "count": 14
     },
     {
      "lo": 600,
      "hi": 800,
      "label": "600-800",
-     "count": 9
+     "count": 8
     },
     {
      "lo": 800,
      "hi": 1000,
      "label": "800-1k",
-     "count": 11
+     "count": 9
     },
     {
      "lo": 1000,
      "hi": 1200,
      "label": "1k-1.2k",
-     "count": 2
+     "count": 1
     },
     {
      "lo": 1200,
@@ -3978,20 +3988,20 @@
      "url": "https://detail.zol.com.cn/power/index2115394.shtml"
     },
     {
-     "model": "安钛克NE650 GOLD金牌全模",
-     "brand": "安钛克",
-     "price": 339.0,
-     "prev": 339.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/power/index2181662.shtml"
-    },
-    {
      "model": "利民TR-KG750-WATX3.1金牌电源",
      "brand": "利民",
      "price": 349.0,
      "prev": 349.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/power/index2124586.shtml"
+    },
+    {
+     "model": "微星PAG G650LS PCIE5金牌全",
+     "brand": "微星",
+     "price": 349.0,
+     "prev": 349.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/power/index2142155.shtml"
     }
    ],
    "rises": [
@@ -4020,31 +4030,39 @@
      "url": "https://detail.zol.com.cn/power/index2115394.shtml"
     },
     {
-     "model": "安钛克NE650 GOLD金牌全模",
-     "brand": "安钛克",
-     "price": 339.0,
-     "prev": 339.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/power/index2181662.shtml"
-    },
-    {
      "model": "利民TR-KG750-WATX3.1金牌电源",
      "brand": "利民",
      "price": 349.0,
      "prev": 349.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/power/index2124586.shtml"
+    },
+    {
+     "model": "微星PAG G650LS PCIE5金牌全",
+     "brand": "微星",
+     "price": 349.0,
+     "prev": 349.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/power/index2142155.shtml"
     }
    ],
-   "changed": 49
+   "changed": 42
   },
   "显示器": {
-   "count": 84,
-   "min": 779.0,
+   "count": 85,
+   "min": 729.0,
    "max": 4399.0,
-   "avg": 1959,
-   "median": 1649,
+   "avg": 1904,
+   "median": 1659,
    "models": [
+    {
+     "model": "戴尔E1715S画面内切换技术",
+     "brand": "戴尔",
+     "price": 729.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/lcd/index381320.shtml"
+    },
     {
      "model": "AOC Q27B30通透屏幕",
      "brand": "AOC",
@@ -4052,14 +4070,6 @@
      "prev": 779.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/lcd/index2097647.shtml"
-    },
-    {
-     "model": "戴尔24系列 SE2416HM",
-     "brand": "戴尔",
-     "price": 799.0,
-     "prev": 799.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/lcd/index1235170.shtml"
     },
     {
      "model": "优派VX27G58-2K微边设计",
@@ -4070,12 +4080,28 @@
      "url": "https://detail.zol.com.cn/lcd/index2120221.shtml"
     },
     {
+     "model": "戴尔24系列 SE2416HM",
+     "brand": "戴尔",
+     "price": 799.0,
+     "prev": 799.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/lcd/index1235170.shtml"
+    },
+    {
      "model": "HKC G27H2Max2K·220Hz",
      "brand": "HKC",
      "price": 839.0,
      "prev": 839.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/lcd/index2150767.shtml"
+    },
+    {
+     "model": "HKC 猎鹰27Q200稳固支撑",
+     "brand": "HKC",
+     "price": 849.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/lcd/index2179382.shtml"
     },
     {
      "model": "AOC 2241V",
@@ -4089,8 +4115,8 @@
      "model": "AOC I2769VDCR丽比技术",
      "brand": "AOC",
      "price": 889.0,
-     "prev": null,
-     "chg": null,
+     "prev": 889.0,
+     "chg": 0.0,
      "url": "https://detail.zol.com.cn/lcd/index347910.shtml"
     },
     {
@@ -4126,20 +4152,20 @@
      "url": "https://detail.zol.com.cn/lcd/index2146086.shtml"
     },
     {
+     "model": "AOC Q24G4E2K超清",
+     "brand": "AOC",
+     "price": 999.0,
+     "prev": 999.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/lcd/index2029628.shtml"
+    },
+    {
      "model": "HKC G27M2Pro2K超清",
      "brand": "HKC",
      "price": 999.0,
      "prev": 999.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/lcd/index2146007.shtml"
-    },
-    {
-     "model": "AOC Q24G4E2K超清",
-     "brand": "AOC",
-     "price": 999.0,
-     "prev": null,
-     "chg": null,
-     "url": "https://detail.zol.com.cn/lcd/index2029628.shtml"
     },
     {
      "model": "AOC 27B1H178°广视角",
@@ -4177,8 +4203,8 @@
      "model": "戴尔P2219H1080P高清",
      "brand": "戴尔",
      "price": 1099.0,
-     "prev": null,
-     "chg": null,
+     "prev": 1099.0,
+     "chg": 0.0,
      "url": "https://detail.zol.com.cn/lcd/index1221920.shtml"
     },
     {
@@ -4206,14 +4232,6 @@
      "url": "https://detail.zol.com.cn/lcd/index2133599.shtml"
     },
     {
-     "model": "飞利浦27B2N3500G144Hz刷新率",
-     "brand": "飞利浦",
-     "price": 1199.0,
-     "prev": 1199.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/lcd/index2161158.shtml"
-    },
-    {
      "model": "AOC 27G2IPS屏幕",
      "brand": "AOC",
      "price": 1299.0,
@@ -4228,14 +4246,6 @@
      "prev": 1299.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/lcd/index2112987.shtml"
-    },
-    {
-     "model": "联想T2224R过滤蓝光",
-     "brand": "联想",
-     "price": 1299.0,
-     "prev": null,
-     "chg": null,
-     "url": "https://detail.zol.com.cn/lcd/index1372224.shtml"
     },
     {
      "model": "AOC U27B354KUHD高清硬屏",
@@ -4286,20 +4296,20 @@
      "url": "https://detail.zol.com.cn/lcd/index2136100.shtml"
     },
     {
+     "model": "泰坦军团C30SK PRO 天福",
+     "brand": "泰坦军团",
+     "price": 1499.0,
+     "prev": 1499.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/lcd/index1267673.shtml"
+    },
+    {
      "model": "戴尔P2421",
      "brand": "戴尔",
      "price": 1499.0,
      "prev": 1499.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/lcd/index1338686.shtml"
-    },
-    {
-     "model": "泰坦军团C30SK PRO 天福",
-     "brand": "泰坦军团",
-     "price": 1499.0,
-     "prev": null,
-     "chg": null,
-     "url": "https://detail.zol.com.cn/lcd/index1267673.shtml"
     },
     {
      "model": "AOC Q27N22k显示器",
@@ -4329,8 +4339,8 @@
      "model": "飞利浦27E2N5901RW设计",
      "brand": "飞利浦",
      "price": 1592.0,
-     "prev": null,
-     "chg": null,
+     "prev": 1592.0,
+     "chg": 0.0,
      "url": "https://detail.zol.com.cn/lcd/index2172105.shtml"
     },
     {
@@ -4350,6 +4360,14 @@
      "url": "https://detail.zol.com.cn/lcd/index1137144.shtml"
     },
     {
+     "model": "AOC Q27G4宙斯盾系",
+     "brand": "AOC",
+     "price": 1599.0,
+     "prev": 1599.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/lcd/index1971435.shtml"
+    },
+    {
      "model": "优派vx2778-2k-hd",
      "brand": "优派",
      "price": 1599.0,
@@ -4358,12 +4376,12 @@
      "url": "https://detail.zol.com.cn/lcd/index1292154.shtml"
     },
     {
-     "model": "AOC Q27G4宙斯盾系",
+     "model": "AOC AG322FCX1800R曲率",
      "brand": "AOC",
      "price": 1599.0,
      "prev": 1599.0,
      "chg": 0.0,
-     "url": "https://detail.zol.com.cn/lcd/index1971435.shtml"
+     "url": "https://detail.zol.com.cn/lcd/index1144880.shtml"
     },
     {
      "model": "戴尔U2424H",
@@ -4374,12 +4392,12 @@
      "url": "https://detail.zol.com.cn/lcd/index1971497.shtml"
     },
     {
-     "model": "AOC AG322FCX1800R曲率",
-     "brand": "AOC",
-     "price": 1599.0,
-     "prev": 1599.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/lcd/index1144880.shtml"
+     "model": "戴尔P2719H1080P高清",
+     "brand": "戴尔",
+     "price": 1659.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/lcd/index1221917.shtml"
     },
     {
      "model": "戴尔P2419H1080P高清",
@@ -4398,6 +4416,14 @@
      "url": "https://detail.zol.com.cn/lcd/index1321331.shtml"
     },
     {
+     "model": "飞利浦27E2N5900RW超清观感",
+     "brand": "飞利浦",
+     "price": 1699.0,
+     "prev": 1699.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/lcd/index2150854.shtml"
+    },
+    {
      "model": "华硕ROG XG27ACS2K",
      "brand": "华硕",
      "price": 1699.0,
@@ -4412,14 +4438,6 @@
      "prev": 1699.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/lcd/index2104683.shtml"
-    },
-    {
-     "model": "飞利浦27E2N5900RW超清观感",
-     "brand": "飞利浦",
-     "price": 1699.0,
-     "prev": 1699.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/lcd/index2150854.shtml"
     },
     {
      "model": "AOC U2879VF10.7亿色彩显示",
@@ -4438,20 +4456,20 @@
      "url": "https://detail.zol.com.cn/lcd/index1168153.shtml"
     },
     {
-     "model": "AOC Q34P2",
-     "brand": "AOC",
-     "price": 1799.0,
-     "prev": 1799.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/lcd/index1330975.shtml"
-    },
-    {
      "model": "泰坦军团C34CHR",
      "brand": "泰坦军团",
      "price": 1799.0,
      "prev": 1799.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/lcd/index1435934.shtml"
+    },
+    {
+     "model": "AOC Q34P2",
+     "brand": "AOC",
+     "price": 1799.0,
+     "prev": 1799.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/lcd/index1330975.shtml"
     },
     {
      "model": "HKC IG27Q",
@@ -4462,20 +4480,20 @@
      "url": "https://detail.zol.com.cn/lcd/index1337857.shtml"
     },
     {
-     "model": "AOC CQ32G1",
-     "brand": "AOC",
-     "price": 1899.0,
-     "prev": 1899.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/lcd/index1230030.shtml"
-    },
-    {
      "model": "华硕TUF GAMING VG27AQ3A-L",
      "brand": "华硕",
      "price": 1949.0,
      "prev": 1949.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/lcd/index1784900.shtml"
+    },
+    {
+     "model": "AOC AG275QXP实力狂飙",
+     "brand": "AOC",
+     "price": 1949.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/lcd/index1977622.shtml"
     },
     {
      "model": "AOC U2790PQU4K显示器",
@@ -4542,6 +4560,14 @@
      "url": "https://detail.zol.com.cn/lcd/index399094.shtml"
     },
     {
+     "model": "AOC Q27G2S/DIPS屏幕",
+     "brand": "AOC",
+     "price": 2299.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/lcd/index1371672.shtml"
+    },
+    {
      "model": "三星U32J590UQC4K高清",
      "brand": "三星",
      "price": 2399.0,
@@ -4574,6 +4600,14 @@
      "url": "https://detail.zol.com.cn/lcd/index2164631.shtml"
     },
     {
+     "model": "AOC CU34G2X超宽带鱼屏",
+     "brand": "AOC",
+     "price": 2599.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/lcd/index1321261.shtml"
+    },
+    {
      "model": "华硕TUF Gaming VG27AQL1A",
      "brand": "华硕",
      "price": 2699.0,
@@ -4598,6 +4632,14 @@
      "url": "https://detail.zol.com.cn/lcd/index2131081.shtml"
     },
     {
+     "model": "AOC AG277UXFast IPS",
+     "brand": "AOC",
+     "price": 2999.0,
+     "prev": null,
+     "chg": null,
+     "url": "https://detail.zol.com.cn/lcd/index2144651.shtml"
+    },
+    {
      "model": "AOC U27U2",
      "brand": "AOC",
      "price": 3099.0,
@@ -4612,14 +4654,6 @@
      "prev": 3199.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/lcd/index1390596.shtml"
-    },
-    {
-     "model": "技嘉GO27Q32QD-OLED",
-     "brand": "技嘉",
-     "price": 3199.0,
-     "prev": null,
-     "chg": null,
-     "url": "https://detail.zol.com.cn/lcd/index2177727.shtml"
     },
     {
      "model": "飞利浦27E2N6900RW300Hz四倍",
@@ -4641,8 +4675,8 @@
      "model": "戴尔U2718QHDR技术",
      "brand": "戴尔",
      "price": 3679.0,
-     "prev": null,
-     "chg": null,
+     "prev": 3679.0,
+     "chg": 0.0,
      "url": "https://detail.zol.com.cn/lcd/index1179441.shtml"
     },
     {
@@ -4678,28 +4712,12 @@
      "url": "https://detail.zol.com.cn/lcd/index2112096.shtml"
     },
     {
-     "model": "HKC 领航 M8玄墨低反屏",
-     "brand": "HKC",
-     "price": 3999.0,
-     "prev": 3999.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/lcd/index2150116.shtml"
-    },
-    {
      "model": "LG 27GP85010.7亿色",
      "brand": "LG",
      "price": 3999.0,
      "prev": 3999.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/lcd/index1367477.shtml"
-    },
-    {
-     "model": "华硕ROG XG279Q",
-     "brand": "华硕",
-     "price": 4199.0,
-     "prev": 4199.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/lcd/index1304614.shtml"
     },
     {
      "model": "三星S27DG610SCOLED防眩光",
@@ -4721,10 +4739,10 @@
    "series": [
     {
      "date": "2026-11-05",
-     "avg": 1959.0,
+     "avg": 1978.0,
      "min": 779.0,
      "max": 4399.0,
-     "count": 86
+     "count": 76
     },
     {
      "date": "2026-11-08",
@@ -4732,6 +4750,13 @@
      "min": 779.0,
      "max": 4399.0,
      "count": 84
+    },
+    {
+     "date": "2026-11-13",
+     "avg": 1904.0,
+     "min": 729.0,
+     "max": 4399.0,
+     "count": 85
     }
    ],
    "buckets": [
@@ -4739,31 +4764,31 @@
      "lo": 0,
      "hi": 1000,
      "label": "0-1k",
-     "count": 12
+     "count": 14
     },
     {
      "lo": 1000,
      "hi": 2000,
      "label": "1k-2k",
-     "count": 47
+     "count": 46
     },
     {
      "lo": 2000,
      "hi": 3000,
      "label": "2k-3k",
-     "count": 10
+     "count": 13
     },
     {
      "lo": 3000,
      "hi": 4000,
      "label": "3k-4k",
-     "count": 12
+     "count": 10
     },
     {
      "lo": 4000,
      "hi": 5000,
      "label": "4k-5k",
-     "count": 3
+     "count": 2
     }
    ],
    "drops": [
@@ -4776,20 +4801,20 @@
      "url": "https://detail.zol.com.cn/lcd/index2097647.shtml"
     },
     {
-     "model": "戴尔24系列 SE2416HM",
-     "brand": "戴尔",
-     "price": 799.0,
-     "prev": 799.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/lcd/index1235170.shtml"
-    },
-    {
      "model": "优派VX27G58-2K微边设计",
      "brand": "优派",
      "price": 799.0,
      "prev": 799.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/lcd/index2120221.shtml"
+    },
+    {
+     "model": "戴尔24系列 SE2416HM",
+     "brand": "戴尔",
+     "price": 799.0,
+     "prev": 799.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/lcd/index1235170.shtml"
     },
     {
      "model": "HKC G27H2Max2K·220Hz",
@@ -4818,20 +4843,20 @@
      "url": "https://detail.zol.com.cn/lcd/index2097647.shtml"
     },
     {
-     "model": "戴尔24系列 SE2416HM",
-     "brand": "戴尔",
-     "price": 799.0,
-     "prev": 799.0,
-     "chg": 0.0,
-     "url": "https://detail.zol.com.cn/lcd/index1235170.shtml"
-    },
-    {
      "model": "优派VX27G58-2K微边设计",
      "brand": "优派",
      "price": 799.0,
      "prev": 799.0,
      "chg": 0.0,
      "url": "https://detail.zol.com.cn/lcd/index2120221.shtml"
+    },
+    {
+     "model": "戴尔24系列 SE2416HM",
+     "brand": "戴尔",
+     "price": 799.0,
+     "prev": 799.0,
+     "chg": 0.0,
+     "url": "https://detail.zol.com.cn/lcd/index1235170.shtml"
     },
     {
      "model": "HKC G27H2Max2K·220Hz",
@@ -4850,22 +4875,22 @@
      "url": "https://detail.zol.com.cn/lcd/index239012.shtml"
     }
    ],
-   "changed": 76
+   "changed": 78
   }
  },
  "overview": {
-  "core": 9110,
+  "core": 9095,
   "core_complete": true,
-  "with_monitor": 10759,
+  "with_monitor": 10754,
   "medians": {
    "CPU": 1830,
-   "显卡": 3899,
+   "显卡": 3859,
    "主板": 1399,
-   "内存": 734,
-   "固态硬盘": 639,
+   "内存": 749,
+   "固态硬盘": 659,
    "机械硬盘": 1299,
-   "电源": 609,
-   "显示器": 1649
+   "电源": 599,
+   "显示器": 1659
   }
  }
 }
