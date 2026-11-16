@@ -11,3 +11,11 @@ __pycache__/
 _c/
 publish/
 .gitconfig-empty
+
+# 登录态与浏览器取价实验，不提交
+_profile/
+_browser/
+jd_sku.py
+jd_prices.py
+data/jd_*.jsonl
+data/jd_sum.txt
